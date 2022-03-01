@@ -9,4 +9,19 @@
 
     <!--Best Approach, If required we can change the class name...-->
     <bean id="sim" class="com.msg.VodaPhone" />
+
+    <bean id="sai" class="com.msg.SetterInjectLiterals.Student">
+        <property name="studentName" value="Sai" />
+        <property name="id" value="1" />
+    </bean>
+
+    <bean id="ganesh" class="com.msg.SetterInjectLiterals.Student">
+        <property name="studentName" value="Ganesh" />
+        <property name="id" value="2" />
+    </bean>
+
+    <bean id="teacher" class="com.msg.SetterInjectLiterals.Teacher" >
+        <constructor-arg value="ganeshTech" type="java.lang.String" name="teacherName" />
+        <constructor-arg value="1" type="int" name="id" />
+    </bean>
 </beans>
