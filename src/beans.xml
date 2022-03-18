@@ -20,8 +20,9 @@
         <property name="id" value="2" />
     </bean>
 
-    <bean id="teacher" class="com.msg.SetterInjectLiterals.Teacher" >
-        <constructor-arg value="ganeshTech" type="java.lang.String" name="teacherName" />
-        <constructor-arg value="1" type="int" name="id" />
+    <bean id="teacher" class="com.msg.constructorInjection.Teacher">
+        <constructor-arg name="id" value="3" type="int" />
+        <constructor-arg name="teacherName" value="ganeshTeacher" type="String"/>
+        <constructor-arg name="student" ref="sai" type="Student"/>
     </bean>
 </beans>
