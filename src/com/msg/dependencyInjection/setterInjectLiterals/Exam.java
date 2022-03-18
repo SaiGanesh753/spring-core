@@ -1,6 +1,6 @@
-package com.msg.SetterInjectLiterals;
+package com.msg.dependencyInjection.setterInjectLiterals;
 
-import com.msg.constructorInjection.Teacher;
+import com.msg.dependencyInjection.constructorInjection.Teacher;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

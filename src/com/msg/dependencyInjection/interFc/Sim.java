@@ -1,4 +1,4 @@
-package com.msg.interFc;
+package com.msg.dependencyInjection.interFc;
 
 public interface Sim {
 

@@ -4,25 +4,36 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--Not good approach-->
-    <bean class="com.msg.Airtel" id="airtel" />
-    <bean class="com.msg.Idea" id="idea" />
+    <bean class="com.msg.dependencyInjection.Airtel" id="airtel" />
+    <bean class="com.msg.dependencyInjection.Idea" id="idea" />
 
     <!--Best Approach, If required we can change the class name...-->
-    <bean id="sim" class="com.msg.VodaPhone" />
+    <bean id="sim" class="com.msg.dependencyInjection.VodaPhone" />
 
-    <bean id="sai" class="com.msg.SetterInjectLiterals.Student">
+    <bean id="sai" class="com.msg.dependencyInjection.setterInjectLiterals.Student">
         <property name="studentName" value="Sai" />
         <property name="id" value="1" />
     </bean>
 
-    <bean id="ganesh" class="com.msg.SetterInjectLiterals.Student">
+    <bean id="ganesh" class="com.msg.dependencyInjection.setterInjectLiterals.Student">
         <property name="studentName" value="Ganesh" />
         <property name="id" value="2" />
     </bean>
 
-    <bean id="teacher" class="com.msg.constructorInjection.Teacher">
+    <bean id="teacher" class="com.msg.dependencyInjection.constructorInjection.Teacher">
         <constructor-arg name="id" value="3" type="int" />
         <constructor-arg name="teacherName" value="ganeshTeacher" type="String"/>
         <constructor-arg name="student" ref="sai" type="Student"/>
     </bean>
+
+    <bean id="mathCheatRef" class="com.msg.dependencyInjection.exampleDemo2.MathCheat"/>
+    <bean id="friend1" class="com.msg.dependencyInjection.exampleDemo2.Friend1">
+        <property name="friendId" value="1001" />
+        <property name="mathCheat" ref="mathCheatRef" />
+    </bean>
+
+    <bean id="friend2" class="com.msg.dependencyInjection.exampleDemo2.Friend2">
+        <property name="mathCheat" ref="mathCheatRef" />
+    </bean>
+
 </beans>

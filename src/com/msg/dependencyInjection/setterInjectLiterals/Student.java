@@ -1,4 +1,4 @@
-package com.msg.SetterInjectLiterals;
+package com.msg.dependencyInjection.setterInjectLiterals;
 
 public class Student {
 

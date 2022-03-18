@@ -1,6 +1,6 @@
-package com.msg;
+package com.msg.dependencyInjection;
 
-import com.msg.interFc.Sim;
+import com.msg.dependencyInjection.interFc.Sim;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,6 +1,6 @@
-package com.msg.constructorInjection;
+package com.msg.dependencyInjection.constructorInjection;
 
-import com.msg.SetterInjectLiterals.Student;
+import com.msg.dependencyInjection.setterInjectLiterals.Student;
 
 public class Teacher {
 

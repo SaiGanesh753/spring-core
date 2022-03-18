@@ -1,12 +1,11 @@
-package com.msg;
+package com.msg.dependencyInjection;
 
-import com.msg.interFc.Sim;
+import com.msg.dependencyInjection.interFc.Sim;
 
 public class Airtel implements Sim {
 
     public Airtel() {
-        System.out.println("-----------------");
-        System.out.println("testing is initiated or not....");
+        System.out.println("airtel class initiated");
     }
 
     @Override
